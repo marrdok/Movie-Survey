@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Survey</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1 id="title">Let's now talk about your movie preference!</h1>
+      <hr />
+      <p id="descriprion">
+        Your feedback will help us improve our dedicated movie suggestion daily
+        blog
+      </p>
+    </div>
+    <br /><br />
+    <form id="survey-form" action="#">
+      <label id="name-label">Name</label> <br />
+
+      <input type="text" id="name" name="name" placeholder="Enter your name" />
+
+      <br /><br />
+      <label id="email-label">Email</label><br />
+
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+      />
+
+      <br /><br />
+      <label id="number-label">Age</label><br />
+
+      <input
+        type="number"
+        name="number"
+        id="number"
+        min="1"
+        max="99"
+        placeholder="Age"
+      />
+      <br />
+      <br />
+      <label for="dropdown">
+        - What kind of movies do you love most of all?</label
+      >
+      <br />
+      <select name="dropdown" id="dropdown">
+        <option value="Action">Action</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Drama">Drama</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Horror">Horror</option>
+        <option value="Mystery">Mystery</option>
+        <option value="Romance">Romance</option>
+        <option value="Thriller">Thriller</option>
+        <option value="Western">Western</option></select
+      ><br />
+      <br />
+      <p>- Approximately how many movies do you watch per week?</p>
+
+      <input type="radio" name="quantity" id="many" value="many" /><label
+        for="many"
+      >
+        5 to 7</label
+      ><br />
+      <input type="radio" name="quantity" id="avarage" value="avarage" />
+      <label for="avarage">3 to 4</label><br />
+      <input type="radio" name="quantity" id="low" value="low" />
+      <label for="low"> 1 to 2</label><br />
+      <br />
+      <p>
+        - On which devices do you usually watch movies? (you can choose more
+        than one option)
+      </p>
+      <input type="checkbox" name="tv" id="tv" value="tv" />
+      <label for="tv">TV</label> <br />
+      <input type="checkbox" name="pc" id="pc" value="pc" />
+      <label for="pc">PC</label><br />
+      <input type="checkbox" name="tablet" id="tablet" value="tablet" />
+      <label for="tablet"> Tablet</label><br />
+      <input type="checkbox" name="smart" id="smart" value="smart" />
+      <label for="smart">Smartphone</label><br /><br />
+      <p>
+        Do you have any suggeston to impove our service or do you want simply
+        add something more to your answers? feel free to say it here below
+      </p>
+      <textarea
+        name="form"
+        id="form"
+        cols="98"
+        rows="8"
+        placeholder="you can insert your text here"
+      ></textarea>
+      <br />
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
